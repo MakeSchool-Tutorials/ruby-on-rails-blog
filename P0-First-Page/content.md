@@ -23,10 +23,10 @@ Rails makes it very easy to generate the files that you need to start building a
 <br/>
 <br/>
 > [win-only]
-> Windows Only
+> **Windows Only**
 <br/>
 <br/>
-> Press the Windows ⊞​ ​key + R to open "Run". Type cmd.exe and press **enter**.
+> Press the **Windows ⊞​** ​key + **R** to open "Run". Type cmd.exe and press **enter**.
 >
 > ![Open command prompt in Windows](./4-open-command.png "Open command prompt in Windows")
 >
@@ -41,7 +41,7 @@ Rails makes it very easy to generate the files that you need to start building a
 >
 >![Navigate to right folder](./7-enter-folder.png "Navigate to correct folder in Windows")
 
-From now on we will refer to the OSX terminal and the Windows command prompt as the **​terminal**​. When you type something into the terminal, you press the **enter** ​key and the terminal will execute what you entered. Every command for the terminal will be prefixed with a​ **$** ​in this tutorial. **D​on’t** e​nter the $ when you copy and paste a command into the terminal.
+From now on we will refer to the OSX terminal and the Windows command prompt as just the **​terminal**​. When you type something into the terminal, you press the **enter** ​key and the terminal will execute what you entered. Every command for the terminal will be prefixed with a​ **$** ​in this tutorial. **D​on’t** e​nter the $ symbol when you copy and paste a command into the terminal.
 
 ![Creating Rails app](./8-creating-app.png "Creating Rails app")
 
@@ -61,7 +61,7 @@ Now we want to make sure that everything works just as expected, so we will star
 <br/>
 `$ ​ruby bin\rails server` ​(Windows) 
 
-and press the **enter** key again. If you now type [http://localhost:3000](http://localhost:3000) in your browser, you will see this page:
+and press the **enter** key again. If you now type [http://localhost:3000](http://localhost:3000) in your browser, you should see this page:
 
 ![Running empty rails app](./9-running-empty.png "Running empty rails app")
 
