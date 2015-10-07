@@ -14,9 +14,10 @@ Rails makes it very easy to generate the files that you need to start building a
 > ![Open terminal in Mac OSX](./1-open-terminal.png "Open terminal in Mac OSX")
 >
 > This should open the OSX terminal.
+>
 > ![Empty OSX terminal](./2-empty-terminal.png "Empty terminal in Mac OSX")
 >
-> Now type ​`cd Documents` ​and press ​**enter** to navigate to the Documents folder.
+> Now type `cd Documents` and press **enter** to navigate to the Documents folder.
 >
 >![Navigate to right folder](./3-enter-folder.png "Navigate to correct folder in Mac OSX")
 <br/>
@@ -26,40 +27,40 @@ Rails makes it very easy to generate the files that you need to start building a
 > **Windows Only**
 <br/>
 <br/>
-> Press the **Windows ⊞​** ​key + **R** to open "Run". Type cmd.exe and press **enter**.
+> Press the **Windows key + R** to open "Run". Type cmd.exe and press **enter**.
 >
 > ![Open command prompt in Windows](./4-open-command.png "Open command prompt in Windows")
 >
 > This should open the Windows command prompt.
 > ![Empty command prompt](./5-empty-command.png "Empty Windows command prompt")
 >
-> We want to create our application in a sensible place, so let’s go to a directory that makes sense. Type ​`cd../..​` into the command prompt and press **enter**.​
+> We want to create our application in a sensible place, so let's go to a directory that makes sense. Type `cd../..` into the command prompt and press **enter**.
 >
 >![Leave the wrong folder](./6-leave-folder.png "Leave the wrong folder in Windows")
 >
-> Now, it should look like the above. Let’s go to your D​ocuments​ folder. Type ​`cd Users/your_name/Documents​` and press **enter**. ​Replace *your_name*​ with your username on your computer.
+> Now, it should look like the above. Let's go to your Documents folder. Type `cd Users/your_name/Documents` and press **enter**. Replace *your_name* with your username on your computer.
 >
 >![Navigate to right folder](./7-enter-folder.png "Navigate to correct folder in Windows")
 
-From now on we will refer to the OSX terminal and the Windows command prompt as just the **​terminal**​. When you type something into the terminal, you press the **enter** ​key and the terminal will execute what you entered. Every command for the terminal will be prefixed with a​ **$** ​in this tutorial. **D​on’t** e​nter the $ symbol when you copy and paste a command into the terminal.
+From now on we will refer to the OSX terminal and the Windows command prompt as just the **terminal**. When you type something into the terminal, you press the **enter** key and the terminal will execute what you entered. Every command for the terminal will be prefixed with a **$** in this tutorial. **Don't** enter the $ symbol when you copy and paste a command into the terminal.
 
 ![Creating Rails app](./8-creating-app.png "Creating Rails app")
 
-So, let’s get started. Type
+So, let's get started. Type
 
-`$ ​rails new blog`
+`$ rails new blog`
 
-in your terminal and press the **enter** key. Rails will now generate all the files we need to start building a blog. Once it is finished, we need to go into the newly created folder called​ **blog** in the terminal. To do that, we type
+in your terminal and press the **enter** key. Rails will now generate all the files we need to start building a blog. Once it is finished, we need to go into the newly created folder called **blog** in the terminal. To do that, we type
 
-`$ ​cd blog`
+`$ cd blog`
 
 into the terminal and press **enter**.
 
 Now we want to make sure that everything works just as expected, so we will start up our web server. Type into the terminal:
 
-`$ ​bin/rails server` ​(Mac OS X) 
+`$ bin/rails server` (Mac OS X) 
 <br/>
-`$ ​ruby bin\rails server` ​(Windows) 
+`$ ruby bin\rails server` (Windows) 
 
 and press the **enter** key again. If you now type [http://localhost:3000](http://localhost:3000) in your browser, you should see this page:
 
@@ -67,7 +68,7 @@ and press the **enter** key again. If you now type [http://localhost:3000](http:
 
 This shows you that everything is set up correctly and we can get started to make our blog!
 
-Let’s open our Sublime Text 2/3 editor to see all the files that Rails made for us. Open Sublime Text 2/3 by clicking on the application icon.
+Let's open our Sublime Text 2/3 editor to see all the files that Rails made for us. Open Sublime Text 2/3 by clicking on the application icon.
 
 Open a folder in Sublime by navigating to File in the top bar. 
 
@@ -80,4 +81,3 @@ Then select the correct folder named **blog**.
 You should now see the folder and all it's files in the left hand sidebar in Sublime.
 
 ![All blog files in Sublime](./12-blog-in-sublime.png "All blog files in Sublime")
-
