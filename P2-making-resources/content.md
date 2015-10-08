@@ -67,20 +67,22 @@ Now type **Cmd + S** (Mac OSX) or **Ctrl + S** (Windows) to save the file and na
 
 Press **enter** when you typed the filename and the file will appear in the directory. Now let's put some HTML into the new file:
 
-    <h1>New Article</h1>
-    <%= form_for :article, url: articles_path do |f| %>
-      <p>
-        <%= f.label :title %><br>
-        <%= f.text_field :title %>
-      </p>
-      <p>
-    ￼   <%= f.label :text %><br>
-        <%= f.text_area :text %>
-      </p>
-      <p>
-        <%= f.submit 'Save Article' %>
-      </p> 
-    <% end %>
+```
+<h1>New Article</h1>
+<%= form_for :article, url: articles_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+￼   <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit 'Save Article' %>
+  </p> 
+<% end %>
+```
 
 If you now navigate to the new URL [http://localhost:3000/articles/new​](http://localhost:3000/articles/new​) you will see the new form. It really is that easy to make a form!
 
