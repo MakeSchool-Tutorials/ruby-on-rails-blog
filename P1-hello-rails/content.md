@@ -16,8 +16,8 @@ A **view** displays information in the browser, so that humans (that's us!) can 
 
 Ok, so let's get started on making a controller. This is very easy as Rails will help us with this. Oh but wait! Right now, we have our web server running in our terminal. Instead of stopping it, let's open a second terminal tab or window. You can do this by typing **Cmd + T** in the Mac terminal and it will open a new tab.
 
-> [win-only]
-> **Windows Only**
+> [win]
+> **For Windows Users**
 <br/>
 <br/>
 > In Windows, go to your folder in your file explorer.
@@ -71,8 +71,8 @@ and remove the **#**. This makes the code active and the line should now look li
 `root 'welcome#index'`
 
 
-> [win-only]
-> **Windows Only**
+> [win]
+> **For Windows Users**
 <br/>
 <br/>
 > Open the file */blog/app/views/layouts/**application.html.erb*** and change it to the following (in italics):
