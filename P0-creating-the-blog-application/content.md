@@ -5,8 +5,8 @@ slug: creating-the-blog-application
 
 Rails makes it very easy to generate the files that you need to start building a Rails application. Just open the Terminal on a Mac or the Command prompt on Windows.
 
-> [mac-only]
-> **Mac Only**
+> [maconly]
+> **For Mac Users**
 <br/>
 <br/>
 > Go to your Applications folder and click on the Utilities folder. Then click on Terminal to open the app.
