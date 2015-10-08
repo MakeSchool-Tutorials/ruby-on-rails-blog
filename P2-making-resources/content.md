@@ -5,7 +5,7 @@ slug: making-resources
 
 We already had our */config/**routes.rb*** file open, so edit it a little bit more. Add this line to the file:
 
-```ruby
+```
 Rails.application.routes.draw do
     resources :articles
 
@@ -40,7 +40,7 @@ Firstly, we need a place within the application to create a new article. A great
 Let's create an ArticlesController by using some Rails magic in the terminal again. Type the following: 
 
 `$ bin/rails generate controller articles` (Mac OSX)
-
+<br/>
 `$ ruby bin/rails generate controller articles` (Windows)
 
 and ... you know it ... press **enter**. Let's open the newly created controller and add a new action.
@@ -52,7 +52,7 @@ and ... you know it ... press **enter**. Let's open the newly created controller
 
 The code should look like this in the **articles_controller.rb**, which you can find under */blog/app/controllers*.
 
-```ruby
+```
 class ArticlesController < ApplicationController
   def new
   end
@@ -71,7 +71,7 @@ Now type **Cmd + S** (Mac OSX) or **Ctrl + S** (Windows) to save the file and na
 
 Press **enter** when you typed the filename and the file will appear in the directory. Now let's put some HTML into the new file:
 
-```html
+```
 <h1>New Article</h1>
 <%= form_for :article, url: articles_path do |f| %>
   <p>
@@ -111,7 +111,7 @@ Oh no, we got an error! This is because we have not defined the **create** actio
 
 Open the **articles_controller.rb** again and add this code to it:
 
-```ruby
+```
 class ArticlesController < ApplicationController
   def new
   end
