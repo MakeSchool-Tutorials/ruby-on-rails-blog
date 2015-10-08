@@ -1,5 +1,5 @@
 ---
-title: "Creating the blog application"
+title: "Creating the Blog Application"
 slug: creating-the-blog-application
 ---
 
