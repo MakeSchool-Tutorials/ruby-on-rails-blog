@@ -127,6 +127,3 @@ Enter some details into the form and click the **Save Article** button now. You 
 ![Article json in browser](./7-article-json.png "Article json in browser")
 
 This is already really great but not very useful when building a blog. We want to save this data in a database to then show it on a website. So let's build the last building block to a complete web application.
-
-
-
