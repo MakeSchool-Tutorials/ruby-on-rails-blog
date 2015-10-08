@@ -74,7 +74,7 @@ and remove the **#**. This makes the code active and the line should now look li
 <br/>
 > Open the file */blog/app/views/layouts/**application.html.erb*** and change it to the following (in italics):
 
-```html
+```
 <!DOCTYPE html>
 <html>
   <head>
