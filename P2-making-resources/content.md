@@ -3,7 +3,7 @@ title: "Making Resources"
 slug: making-resources
 ---     
 
-We already had our */config/**routes.rb** * file open, so edit it a little bit more. Add this line to the file:
+We already had our */config/__routes.rb__* file open, so edit it a little bit more. Add this line to the file:
 
     Rails.application.routes.draw do
         resources :articles
@@ -50,12 +50,10 @@ and ... you know it ... press **enter**. Let's open the newly created controller
 
 The code should look like this in the **articles_controller.rb**, which you can find under */blog/app/controllers*.
 
-```
-class ArticlesController < ApplicationController
-  def new
-  end
-end
-```
+    class ArticlesController < ApplicationController
+      def new
+      end
+    end
 
 We also need a view to create an article, so let's go ahead and create a new file. As it is a view, it should live under */views/articles* in the */app* folder. Let's name it **new.html.erb** as it will create new articles.
 
@@ -69,22 +67,20 @@ Now type **Cmd + S** (Mac OSX) or **Ctrl + S** (Windows) to save the file and na
 
 Press **enter** when you typed the filename and the file will appear in the directory. Now let's put some HTML into the new file:
 
-```
-<h1>New Article</h1>
-<%= form_for :article, url: articles_path do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-￼   <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
-  <p>
-    <%= f.submit 'Save Article' %>
-  </p> 
-<% end %>
-```
+    <h1>New Article</h1>
+    <%= form_for :article, url: articles_path do |f| %>
+      <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+      </p>
+      <p>
+    ￼   <%= f.label :text %><br>
+        <%= f.text_area :text %>
+      </p>
+      <p>
+        <%= f.submit 'Save Article' %>
+      </p> 
+    <% end %>
 
 If you now navigate to the new URL [http://localhost:3000/articles/new​](http://localhost:3000/articles/new​) you will see the new form. It really is that easy to make a form!
 
@@ -109,16 +105,14 @@ Oh no, we got an error! This is because we have not defined the **create** actio
 
 Open the **articles_controller.rb** again and add this code to it:
 
-```
-class ArticlesController < ApplicationController
-  def new
-  end
-  
-  def create
-    render plain: params[:article].inspect
-  end
-end
-```
+    class ArticlesController < ApplicationController
+      def new
+      end
+      
+      def create
+        render plain: params[:article].inspect
+      end
+    end
 
 Enter some details into the form and click the **Save Article** button now. You should be getting something like this in your browser:
 
