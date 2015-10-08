@@ -20,7 +20,6 @@ Rails makes it very easy to generate the files that you need to start building a
 >
 >![Navigate to right folder](./3-enter-folder.png "Navigate to correct folder in Mac OSX")
 
-
 > [win]
 > **For Windows Users**
 <br/>
