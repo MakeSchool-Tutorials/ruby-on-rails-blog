@@ -3,7 +3,8 @@ title: "Creating the Blog Application"
 slug: creating-the-blog-application
 ---
 
-Rails makes it very easy to generate the files that you need to start building a Rails application. Just open the Terminal on a Mac or the Command prompt on Windows.
+Rails makes it very easy to generate the files that you need to start building a Rails application. 
+Just open the Terminal on a Mac...
 
 > [mac]
 > **For Mac Users**
@@ -19,6 +20,8 @@ Rails makes it very easy to generate the files that you need to start building a
 > Now type `cd Documents` and press **enter** to navigate to the Documents folder.
 >
 >![Navigate to right folder](./3-enter-folder.png "Navigate to correct folder in Mac OSX")
+
+... or the Command prompt on Windows.
 
 > [win]
 > **For Windows Users**
