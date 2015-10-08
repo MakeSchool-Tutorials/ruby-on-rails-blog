@@ -3,15 +3,13 @@ title: "Making Resources"
 slug: making-resources
 ---     
 
-We already had our */config/**routes.rb*** file open, so edit it a little bit more. Add this line to the file:
+We already had our */config/**routes.rb** * file open, so edit it a little bit more. Add this line to the file:
 
-```
-Rails.application.routes.draw do
-    resources :articles
+    Rails.application.routes.draw do
+        resources :articles
 
-    root 'welcome#index'
-end
-```
+        root 'welcome#index'
+    end
 
 PS: We removed all the greyed out code from the file to make it easier to read. You can just copy and paste the above lines and remove everything else.
 
