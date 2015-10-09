@@ -5,26 +5,28 @@ slug: making-resources
 
 We already had our */config/__routes.rb__* file open, so edit it a little bit more. Add this line to the file:
 
-    Rails.application.routes.draw do
-        resources :articles
+```
+Rails.application.routes.draw do
+    resources :articles
 
-        root 'welcome#index'
-    end
+    root 'welcome#index'
+end
+```
 
 PS: We removed all the greyed out code from the file to make it easier to read. You can just copy and paste the above lines and remove everything else.
 
 Now we are going to use more Rails magic. Let's go back to the terminal and type
 
 `$ bin/rake routes` (Mac OSX)
-<br/>
+
 `$ ruby bin/rake routes` (Windows)
 
 and press **enter**. Rails will now create new web addresses for our blog. The web addresses we will use are
 
 [http://localhost:3000/articles](http://localhost:3000/articles) - this will show all the articles
-<br/> 
+
 [http://localhost:3000/new](http://localhost:3000/new) - this will show the form to create an article
-<br/> 
+
 [http://localhost:3000/articles/:id](http://localhost:3000/articles/:id) - this will show us only one article
 
 Now that we have the routes, let's make our basic form, which will look something like this:
@@ -38,7 +40,7 @@ Firstly, we need a place within the application to create a new article. A great
 Let's create an ArticlesController by using some Rails magic in the terminal again. Type the following: 
 
 `$ bin/rails generate controller articles` (Mac OSX)
-<br/>
+
 `$ ruby bin/rails generate controller articles` (Windows)
 
 and ... you know it ... press **enter**. Let's open the newly created controller and add a new action.
@@ -92,11 +94,11 @@ If you now navigate to the new URL [http://localhost:3000/articles/new​](http:
 > **Ruby vs HTML syntax**
 <br/>
 > In HTML, the tags we use to make a web page use these **< >** brackets.
-<br/>
+>
 > Example: `<h1>Hello</h1>`
 > 
 > In Ruby, the same brackets are used but they are followed with the **%** sign.
-<br/>
+>
 > Example: `<=% ... %>`
 
 Click the **Save Article** button now to see what happens.
