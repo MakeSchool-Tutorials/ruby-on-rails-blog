@@ -13,20 +13,17 @@ In Rails, there's a folder for CSS spreadsheets and we will modify the **article
 
 Let's put some CSS rules into the file to make our page look great. First we add some classes to HTML tags as we want these consistent across our whole page.
 
-```css
-body {
-  margin: 0;
-  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  background-color: #2A4550;
-  color: white;
-  margin: 0;
-  padding: 24px;
-}
-```
+    body {
+      margin: 0;
+      font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      background-color: #2A4550;
+      color: white;
+      margin: 0;
+      padding: 24px;
+    }
 
 Those two rules will set the font-family for the whole page to a modern font family, which will instantly make your page look more modern and sophisticated.
 
@@ -67,13 +64,11 @@ You can of course put any image URL you want to put. We just chose cats because 
 
 Add this CSS to your **articles.scss** file:
 
-```css
-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 24px;
-}
-```
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+    }
 
 It will make sure that your image resizes with your page and is not too big.
 
