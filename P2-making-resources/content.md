@@ -75,7 +75,7 @@ Press **enter** when you typed the filename and the file will appear in the dire
     <%= f.text_field :title %>
   </p>
   <p>
-￼   <%= f.label :text %><br>
+    <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
   <p>
