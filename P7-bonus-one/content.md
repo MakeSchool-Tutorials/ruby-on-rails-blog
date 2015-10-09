@@ -12,16 +12,14 @@ If you were to publish your blog online, anyone would be able to add articles. R
 
 Open the **articles_controller.rb** again and add the following line of code at the top of the file:
 
-```ruby
-class ArticlesController < ApplicationController
-  
-  http_basic_authenticate_with name: "alena", password: "secret", except: [:index, :show]
-  
-  def index
-    
-. . . shortened for brevity . . .
-end
-```
+    class ArticlesController < ApplicationController
+      
+      http_basic_authenticate_with name: "alena", password: "secret", except: [:index, :show]
+      
+      def index
+        
+    . . . shortened for brevity . . .
+    end
 
 You can of course change your name and password!
 
