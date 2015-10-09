@@ -41,7 +41,7 @@ We also need a view of course, so let's create a new file called **index.html.er
 
 Go to [http://localhost:3000/articles](http://localhost:3000/articles) and see all your articles listed. This is an almost complete web page but the one thing we're missing is fundamental to a web page, **links**! We should link our pages together, so we can go back and forward between all our newly created pages.
 
-Let's do that. Open the *app/views/welcome/**index.html.erb*** file and add the following line:
+Let's do that. Open the *app/views/welcome/__index.html.erb__* file and add the following line:
 
 ```
 <h1>Hello, Rails!</h1>
