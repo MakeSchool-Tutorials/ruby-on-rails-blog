@@ -17,7 +17,7 @@ Ok, so let's get started on making a controller. This is very easy as Rails will
 
 > [win]
 > For Windows Users
-<br/>
+>
 > In Windows, go to your folder in your file explorer.
 >
 > ![Open the file explorer](./1-open-explorer.png "Open the file explorer")
@@ -71,7 +71,7 @@ and remove the **#**. This makes the code active and the line should now look li
 
 > [win]
 > For Windows Users
-<br/>
+>
 > Open the file */blog/app/views/layouts/__application.html.erb__* and change it to the following (in italics):
 
     <!DOCTYPE html>
