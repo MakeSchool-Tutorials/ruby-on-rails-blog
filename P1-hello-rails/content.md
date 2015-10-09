@@ -33,7 +33,7 @@ Ok, so let's get started on making a controller. This is very easy as Rails will
 Now type the following command into the terminal:
 
 `$ bin/rails generate controller welcome index` (Mac OSX)
-<br/>
+
 `$ ruby bin/rails generate controller welcome index` (Windows)
 
 and press **enter**. This will create a controller called **welcome** with an action called **index** inside of it. Open the **welcome_controller** in your Sublime Text 2 editor and have a look for yourself. You can find it under */blog/app/controllers*.
@@ -44,7 +44,7 @@ Now, let's have a look at the view and modify it.
 
 Open the **index.html.erb** file that is located under */blog/app/views/welcome*. Delete all of the existing code in the file, and replace it with this single line of code.
 
-`<h1>Hello, Rails!</h1>`
+    <h1>Hello, Rails!</h1>
 
 The file now should look like this:
 
@@ -72,21 +72,21 @@ and remove the **#**. This makes the code active and the line should now look li
 > [win]
 > For Windows Users
 >
-> Open the file */blog/app/views/layouts/__application.html.erb__* and change it to the following (in italics):
-
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Blog</title>
-        <%= stylesheet_link_tag 'application', media: 'all', 'dataturbolinkstrack' => true %>
-        <%= javascript_include_tag 'default', 'dataturbolinkstrack' => true %>
-        <%= csrf_meta_tags %>
-      </head>
-        
-      <body>
-      <%= yield %>
-      </body>
-    </html>
+> Open the file */blog/app/views/layouts/__application.html.erb__* and change it to the following:
+>```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'dataturbolinkstrack' => true %>
+    <%= javascript_include_tag 'default', 'dataturbolinkstrack' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+  <%= yield %>
+  </body>
+</html>
+> ```
 
 If you now **save your file** and reload the browser, you should see your "Hello Rails" message.
 
