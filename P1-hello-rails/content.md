@@ -82,6 +82,7 @@ and remove the **#**. This makes the code active and the line should now look li
         <%= javascript_include_tag 'default', 'dataturbolinkstrack' => true %>
         <%= csrf_meta_tags %>
       </head>
+        
       <body>
       <%= yield %>
       </body>
