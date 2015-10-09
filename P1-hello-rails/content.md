@@ -72,22 +72,20 @@ and remove the **#**. This makes the code active and the line should now look li
 > [win]
 > **For Windows Users**
 <br/>
-> Open the file */blog/app/views/layouts/**application.html.erb*** and change it to the following (in italics):
+> Open the file */blog/app/views/layouts/__application.html.erb__* and change it to the following (in italics):
 
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Blog</title>
-    <%= stylesheet_link_tag 'application', media: 'all', 'dataturbolinkstrack' => true %>
-    <%= javascript_include_tag 'default', 'dataturbolinkstrack' => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-  <%= yield %>
-  </body>
-</html>
-```
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Blog</title>
+        <%= stylesheet_link_tag 'application', media: 'all', 'dataturbolinkstrack' => true %>
+        <%= javascript_include_tag 'default', 'dataturbolinkstrack' => true %>
+        <%= csrf_meta_tags %>
+      </head>
+      <body>
+      <%= yield %>
+      </body>
+    </html>
 
 If you now **save your file** and reload the browser, you should see your "Hello Rails" message.
 
