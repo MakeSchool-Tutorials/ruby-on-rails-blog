@@ -7,8 +7,8 @@ Rails makes it very easy to generate the files that you need to start building a
 Just open the Terminal on a Mac...
 
 > [mac]
-> **For Mac Users**
-<br/>
+> For Mac Users
+>
 > Go to your Applications folder and click on the Utilities folder. Then click on Terminal to open the app.
 >
 > ![Open terminal in Mac OSX](./1-open-terminal.png "Open terminal in Mac OSX")
@@ -24,8 +24,8 @@ Just open the Terminal on a Mac...
 ... or the Command prompt on Windows.
 
 > [win]
-> **For Windows Users**
-<br/>
+> For Windows Users
+>
 > Press the **Windows key + R** to open "Run". Type cmd.exe and press **enter**.
 >
 > ![Open command prompt in Windows](./4-open-command.png "Open command prompt in Windows")
