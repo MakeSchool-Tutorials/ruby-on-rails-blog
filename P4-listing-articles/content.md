@@ -7,7 +7,7 @@ So we've created a form and saved the articles content in the database, but now 
 
 We need to add another action to our **articles_controller.rb**. Let's open it and add the **index** action:
 
-```ruby
+```
 class ArticlesController < ApplicationController
   def index
     @articles = Article.all
@@ -23,7 +23,7 @@ end
 
 We also need a view of course, so let's create a new file called **index.html.erb** in the views directory */blog/app/views/articles*. Add the following code:
 
-```html
+```
 <h1>Listing Articles</h1>
  <table>
   <tr>
@@ -43,16 +43,16 @@ Go to [http://localhost:3000/articles](http://localhost:3000/articles) and see a
 
 Let's do that. Open the *app/views/welcome/**index.html.erb*** file and add the following line:
 
-```html
+```
 <h1>Hello, Rails!</h1>
 <%= link_to 'My Blog', {controller: 'articles'} %>
 ```
 
 The **link_to** method is one of Rails' built-in view helpers. It creates a hyperlink based on text to display and where to go - in this case, to the path for articles.
 
-Let's add links to the other views as well, starting with adding a **New Article** link to *app/views/articles/**index.html.erb***:
+Let's add links to the other views as well, starting with adding a **New Article** link to *app/views/articles/__index.html.erb__*:
 
-```html
+```
 <h1>Listing Articles</h1>
 <%= link_to 'New Article', new_article_path %>
  <table>
@@ -71,9 +71,9 @@ Let's add links to the other views as well, starting with adding a **New Article
 </table>
 ```
 
-Now, add another link in *app/views/articles/**new.html.erb***, underneath the form, to go back to the index action.
+Now, add another link in *app/views/articles/__new.html.erb__*, underneath the form, to go back to the index action.
 
-```html
+```
 <h1>New Article</h1>
 
 <%= form_for :article, url: articles_path do |f| %>
@@ -83,9 +83,9 @@ Now, add another link in *app/views/articles/**new.html.erb***, underneath the f
 <%= link_to 'Back', articles_path %>
 ```
 
-Finally, add a link to the *app/views/articles/**show.html.erb*** file to go back to the **index** action as well, so that people who are viewing a single article can go back and view the whole list again:
+Finally, add a link to the *app/views/articles/__show.html.erb__* file to go back to the **index** action as well, so that people who are viewing a single article can go back and view the whole list again:
 
-```html
+```
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -100,4 +100,3 @@ Finally, add a link to the *app/views/articles/**show.html.erb*** file to go bac
 ```
 
 And now, you can click back and forth between your web page. Nice work!
-
