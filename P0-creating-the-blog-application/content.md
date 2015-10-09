@@ -67,7 +67,7 @@ and press the **enter** key again. If you now type [http://localhost:3000](http:
 
 This shows you that everything is set up correctly and we can get started to make our blog!
 
-Let's open our Sublime Text 2/3 editor to see all the files that Rails made for us. Open Sublime Text 2/3 by clicking on the application icon.
+Let's open our [Sublime Text editor](http://www.sublimetext.com/) to see all the files that Rails made for us. Open Sublime Text by clicking on the application icon.
 
 Open a folder in Sublime by navigating to File in the top bar. 
 
